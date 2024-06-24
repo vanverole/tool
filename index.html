@@ -835,19 +835,13 @@
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
 <script type="text/javascript">
-(function(d, w, s) {
-	var widgetHash = 'd0fdzxtr8e1atj6793t0', gcw = d.createElement(s); gcw.type = 'text/javascript'; gcw.async = true;
-	gcw.src = '//widgets.binotel.com/getcall/widgets/'+ widgetHash +'.js';
-	var sn = d.getElementsByTagName(s)[0]; sn.parentNode.insertBefore(gcw, sn);
-  })(document, window, 'script');
-</script>
-<script>
-function triggerGetCall() {
-        const form = document.querySelector('.bingc-action-open-passive-form');
-        if (form) {
-        form.style.display = 'block';
-        }
-}
+  (function() {
+    var script = document.createElement("script");
+    script.type = "text/javascript"; script.async = true;
+    script.src = "https://web.remonline.app/static/dist/js/order-status-widget.js";
+    script.setAttribute("data-widget-key", "48c2143015e34a8367c30878d4708344");
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })()
 </script>
 </body>
 </html>
